@@ -15,6 +15,7 @@ class ScalarProjHead(nn.Module):
         x = self.layer1(x)
         x = self.layer2(self.act(x))
         x = self.layer3(self.act(x))
+        
         return self.final_act(x)
 
 
